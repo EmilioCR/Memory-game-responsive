@@ -1,5 +1,4 @@
-.back-cards {
-	background: url(../img/back-card.jpg) no-repeat center;
+.card {
     list-style: none;
     display: inline-block;
     background-size: cover;
@@ -8,112 +7,117 @@
     margin: 2px;
 }
 
+.back-cards {
+	background: url(../img/back-card-small.jpg) no-repeat center !important;
+    background-size: cover;
+}
+
 .matched {
     visibility: hidden;
 }
 
-#show-beemo-detective-card {
+.show-beemo-detective-card {
     background: url(../img/beemo-detective-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-beemo-card {
+.show-beemo-card {
     background: url(../img/beemo-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-lemon-card {
+.show-lemon-card {
     background: url(../img/lemon-card-small.jpg) no-repeat center;
     background-color: #ffff01;
 }
 
-#show-jake-angry-card {
+.show-jake-angry-card {
     background: url(../img/jake-angry-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-pingu-card {
+.show-pingu-card {
     background: url(../img/pingu-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-grumosa-card {
+.show-grumosa-card {
     background: url(../img/grumosa-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-finn-card {
+.show-finn-card {
     background: url(../img/finn-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-fionna-card {
+.show-fionna-card {
     background: url(../img/fionna-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-fire-princess-card {
+.show-fire-princess-card {
     background: url(../img/fire-princess-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
-#show-marceline-card {
+.show-marceline-card {
     background: url(../img/marceline-card-small.jpg) no-repeat center;
     background-size: cover;
 }
 
 @media screen and (min-width: 590px) {
-    .cards li {
-        background: url(../img/back-card-small.jpg) no-repeat center;
+    .back-cards {
+        background: url(../img/back-card.jpg) no-repeat center !important;
         background-size: cover;
     }
 
-    #show-beemo-detective-card {
+    .show-beemo-detective-card {
         background: url(../img/beemo-detective-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-beemo-card {
+    .show-beemo-card {
         background: url(../img/beemo-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-lemon-card {
+    .show-lemon-card {
         background: url(../img/lemon-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-jake-angry-card {
+    .show-jake-angry-card {
         background: url(../img/jake-angry-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-pingu-card {
+    .show-pingu-card {
         background: url(../img/pingu-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-grumosa-card {
+    .show-grumosa-card {
         background: url(../img/grumosa-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-finn-card {
+    .show-finn-card {
         background: url(../img/finn-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-fionna-card {
+    .show-fionna-card {
         background: url(../img/fionna-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-fire-princess-card {
+    .show-fire-princess-card {
         background: url(../img/fire-princess-card.jpg) no-repeat center;
         background-size: cover;
     }
 
-    #show-marceline-card {
+    .show-marceline-card {
         background: url(../img/marceline-card.jpg) no-repeat center;
         background-size: cover;
     }

@@ -39,17 +39,54 @@ Deck.prototype = {
 
 
 
-var Cards = (function Cards () {
-	var deck = new Deck();
-	deck.deckRandom();
-	console.log(deck);
+var deck = new Deck();
+deck.deckRandom();
+var count = 0;
 
-	for (var i = 0; i <= cards.length; i++) {
+var firstCard;
+var secondCard;
+
+var firstIdCard;
+var secondIdCard;
+
+var Cards = (function Cards () {
+
+	for (var i = 0; i < 20; i++) {
 		var li = document.createElement('li');
-		console.log(deck[i])
-		li.id = 'show-' + cards[i] + '-card'
+		li.id = 'show-' + deck.cards[i] + '-card'
+		li.classList.add('card', 'back-cards', 'show-' + deck.cards[i] + '-card')
 		cardsContainer.appendChild(li);
 	}
 
+	var li = document.getElementsByClassName('card');
+	for (var i = 0; i < li.length; i++) {
+		li[i].addEventListener('click', function () {
+			
+			count++;
+			if (count === 1) {
+				this.classList.remove('back-cards');
+				firstIdCard = this.id;
+				firstCard = this;
+				console.log('firstIdCard ' + firstIdCard);
+			} else if (count === 2 ) {
+				this.classList.remove('back-cards');
+				secondIdCard = this.id;
+				secondCard = this;
+				console.log('secondIdCard ' + secondIdCard);
+				console.log('firstIdCard ' + firstIdCard);
+				if (firstIdCard == secondIdCard) {
+					console.log('true');
+					firstCard.classList.add('matched');
+					secondCard.classList.add('matched');
+					count = 0;
+				} else {
+					console.log('false');
+					firstCard.classList.add('back-cards');
+					secondCard.classList.add('back-cards');
+					count = 0;
+				}
+			}
 
+		})
+	}
 })()
