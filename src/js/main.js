@@ -67,24 +67,26 @@ var Cards = (function Cards () {
 				this.classList.remove('back-cards');
 				firstIdCard = this.id;
 				firstCard = this;
-				console.log('firstIdCard ' + firstIdCard);
+
 			} else if (count === 2 ) {
 				this.classList.remove('back-cards');
 				secondIdCard = this.id;
 				secondCard = this;
-				console.log('secondIdCard ' + secondIdCard);
-				console.log('firstIdCard ' + firstIdCard);
-				if (firstIdCard == secondIdCard) {
-					console.log('true');
-					firstCard.classList.add('matched');
-					secondCard.classList.add('matched');
-					count = 0;
-				} else {
-					console.log('false');
-					firstCard.classList.add('back-cards');
-					secondCard.classList.add('back-cards');
-					count = 0;
-				}
+				setTimeout(function () {
+					if (firstIdCard == secondIdCard) {
+
+						console.log('true');
+						firstCard.classList.add('matched');
+						secondCard.classList.add('matched');
+						count = 0;
+					} else {
+						console.log('false');
+						firstCard.classList.add('back-cards');
+						secondCard.classList.add('back-cards');
+						count = 0;
+					}
+				},5000)
+					
 			}
 
 		})
